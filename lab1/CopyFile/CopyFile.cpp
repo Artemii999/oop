@@ -1,10 +1,11 @@
 ﻿#include "pch.h"
+#include <cctype>
 #include <fstream>
 #include <iostream>
 
 using namespace std;
 
-int main(int argc, char * argv[])
+int main(int argc, char* argv[])
 {
 	if (argc != 3)
 	{
@@ -39,7 +40,11 @@ int main(int argc, char * argv[])
 	// возвращаем значение, приводимое к bool, которое сигнализирует об успехе
 	while (input.get(ch))
 	{
-		if (!output.put(ch))
+		if (ch == ',')
+		{
+			output << ", you know";
+		}
+		if (!output.put((char)toupper(ch)))
 		{
 			cout << "Failed to save data on disk\n";
 			return 1;
