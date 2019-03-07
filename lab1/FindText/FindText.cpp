@@ -6,7 +6,7 @@ bool CheckArgumentCount(int argc)
 {
 	if (argc != 3)
 	{
-		cout << "Not enough (or too many) input parameters. Example: task1_findText.exe input.txt hello \n";
+		cout << "Not enough (or too many) input parameters. Example: FindText.exe input.txt hello \n";
 		return false;
 	}
 	return true;
