@@ -87,7 +87,7 @@ ifstream OpenFileForReading(const string& fileName)
 	{
 		cout << "Failed to open " << fileName << "\n";
 	}
-	return move(strm); // move - эквивалент static_cast для rvalue в ссылочный тип
+	return strm;
 }
 
 bool GetMatrix3x3FromFile(Matrix3x3 matrix, const string& fileName)

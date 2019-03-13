@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cath-sample", "cath-sample.vcxproj", "{B420C569-F30F-435E-8847-BB2B665BE547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Debug|x64.ActiveCfg = Debug|x64
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Debug|x64.Build.0 = Debug|x64
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Debug|x86.ActiveCfg = Debug|Win32
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Debug|x86.Build.0 = Debug|Win32
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Release|x64.ActiveCfg = Release|x64
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Release|x64.Build.0 = Release|x64
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Release|x86.ActiveCfg = Release|Win32
+		{B420C569-F30F-435E-8847-BB2B665BE547}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20AE4ECD-1864-40AE-BB5F-C2532422D3D6}
+	EndGlobalSection
+EndGlobal
