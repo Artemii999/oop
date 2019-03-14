@@ -36,8 +36,10 @@ double FindArithmeticMeanPositiveElements(const vector<double>& searchArray)
 			count++;
 		}
 	}
-
-	return (arithmeticMean / count);
+	if (count != 0)
+	{
+		return (arithmeticMean / count);
+	}
 }
 
 void SumNumberToArrayElements(vector<double>& arr, double number)

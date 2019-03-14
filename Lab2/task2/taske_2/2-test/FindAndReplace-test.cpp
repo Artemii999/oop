@@ -9,6 +9,15 @@ TEST_CASE("Function FindAndReplace must find and replace (must work)")
 	REQUIRE(FindAndReplace(subject, search, replace) == result);
 }
 
+TEST_CASE("Function FindAndReplace check for re-replace")
+{
+	std::string subject = "Hello World";
+	std::string search = "Hello";
+	std::string replace = "Goodbye";
+	std::string result = "Goodbye World";
+	REQUIRE(FindAndReplace(result, search, replace) == result);
+}
+
 TEST_CASE("If search in string then function must replace")
 {
 	std::string subject = "HelloWorld";
@@ -53,3 +62,4 @@ TEST_CASE("if subject empty then return empty string")
 	std::string result = "";
 	REQUIRE(FindAndReplace(subject, search, replace) == result);
 }
+

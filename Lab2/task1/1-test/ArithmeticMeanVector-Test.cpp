@@ -20,9 +20,9 @@ TEST_CASE("input - empty vector, output - empty vector")
 TEST_CASE("Arithmetic Mean tests")
 {
 	std::vector<double> testArray = { 1, 1, 1, 1, 1 };
-	REQUIRE(FindArithmeticMeanPositiveElements(testArray) == 1);
+	CHECK(FindArithmeticMeanPositiveElements(testArray) == 1);
 	testArray = { 0 };
-	REQUIRE(FindArithmeticMeanPositiveElements(testArray) == 0);
+	CHECK(FindArithmeticMeanPositiveElements(testArray) == 0);
 }
 
 TEST_CASE("Sum arithmetic mean to array - tests")
@@ -31,21 +31,20 @@ TEST_CASE("Sum arithmetic mean to array - tests")
 	double ArithmeticMean = 2.5;
 	std::vector<double> etalonArray = { 3.5, 3.5, 3.5, 3.5, 3.5 };
 	SumNumberToArrayElements(testArray, ArithmeticMean);
-	REQUIRE(IsEqually(testArray, etalonArray) == true);
+	CHECK(IsEqually(testArray, etalonArray) == true);
 }
 
-TEST_CASE("ProcessVector - tests")
+TEST_CASE("ProcessVector - good - tests")
 {
 	std::vector<double> testArray = { 1, 1, 1, 1, 1 };
 	ProcessVector(testArray);
 	std::vector<double> etalonArray = { 2, 2, 2, 2, 2 };
-	REQUIRE(IsEqually(testArray, etalonArray) == true);
+	CHECK(IsEqually(testArray, etalonArray) == true);
 }
-
-TEST_CASE("ProcessVector - empty vector- tests")
+TEST_CASE("ProcessVector - input zero - tests")
 {
-	std::vector<double> testArray = {};
+	std::vector<double> testArray = { 0, 1 };
 	ProcessVector(testArray);
-	std::vector<double> etalonArray = {};
-	REQUIRE(IsEqually(testArray, etalonArray) == true);
+	std::vector<double> etalonArray = { 0.5, 1.5 };
+	CHECK(IsEqually(testArray, etalonArray) == true);
 }
