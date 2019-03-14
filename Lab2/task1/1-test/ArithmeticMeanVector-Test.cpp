@@ -43,8 +43,8 @@ TEST_CASE("ProcessVector - good - tests")
 }
 TEST_CASE("ProcessVector - input zero - tests")
 {
-	std::vector<double> testArray = { 0, 1 };
+	std::vector<double> testArray = { 0 };
 	ProcessVector(testArray);
-	std::vector<double> etalonArray = { 0.5, 1.5 };
+	std::vector<double> etalonArray = { 0 };
 	CHECK(IsEqually(testArray, etalonArray) == true);
 }
