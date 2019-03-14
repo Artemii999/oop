@@ -4,9 +4,9 @@
 std::string FindAndReplace(std::string const& subject, std::string const& search, std::string const& replace)
 {
 	/*
-		subject - ������� ������
-		replace - �� ��� ��������
-		search - ��������� ������
+		subject - изначальная строка
+		replace - на что заменяем
+		search - что ищем
 	*/
 	if (search.empty() || subject.empty())
 	{
