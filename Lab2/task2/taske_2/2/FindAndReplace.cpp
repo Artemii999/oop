@@ -1,7 +1,9 @@
 ﻿#include "pch.h"
 #include "../2/FindAndReplace.h"
 
-std::string FindAndReplace(std::string const& subject, std::string const& search, std::string const& replace)
+using namespace std;
+
+string FindAndReplace(string const& subject, string const& search, string const& replace)
 {
 	/*
 		subject - изначальная строка
@@ -12,15 +14,15 @@ std::string FindAndReplace(std::string const& subject, std::string const& search
 	{
 		return subject;
 	}
-	std::string afterReplace;
+	string afterReplace;
 	size_t position = 0;
 
 	while (position < subject.length())
 	{
-		size_t found = subject.find(search, position);
+		size_t found = subject.find(search, position); // поиск значения в диапазоне
 		afterReplace.append(subject, position, found - position);
 		position = found;
-		if (position != std::string::npos)
+		if (position != string::npos)
 		{
 			afterReplace.append(replace);
 			position += search.length();

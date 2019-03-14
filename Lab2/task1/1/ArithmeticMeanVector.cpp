@@ -5,24 +5,26 @@
 #include <iterator>
 #include <vector>
 
-std::vector<double> ReadArray()
+using namespace std;
+
+vector<double> ReadArray()
 {
-	std::vector<double> numbers(std::istream_iterator<double>(std::cin), (std::istream_iterator<double>()));
+	vector<double> numbers(istream_iterator<double>(cin), (istream_iterator<double>()));
 	return numbers;
 }
 
-void SortArray(std::vector<double>& data)
+void SortArray(vector<double>& data)
 {
-	std::sort(data.begin(), data.end());
+	sort(data.begin(), data.end());
 }
 
-void PrintArray(const std::vector<double>& printArray)
+void PrintArray(const vector<double>& printArray)
 {
-	copy(printArray.begin(), printArray.end(), std::ostream_iterator<double>(std::cout, " "));
-	std::cout << "\n";
+	copy(printArray.begin(), printArray.end(), ostream_iterator<double>(cout, " "));
+	cout << "\n";
 }
 
-double FindArithmeticMeanPositiveElements(const std::vector<double>& searchArray)
+double FindArithmeticMeanPositiveElements(const vector<double>& searchArray)
 {
 	double arithmeticMean = 0;
 	size_t count = 0;
@@ -38,12 +40,12 @@ double FindArithmeticMeanPositiveElements(const std::vector<double>& searchArray
 	return (arithmeticMean / count);
 }
 
-void SumNumberToArrayElements(std::vector<double>& arr, double number)
+void SumNumberToArrayElements(vector<double>& arr, double number)
 {
-	std::transform(arr.begin(), arr.end(), arr.begin(), [=](double element) { return element += number; });
+	transform(arr.begin(), arr.end(), arr.begin(), [=](double element) { return element += number; });
 }
 
-void ProcessVector(std::vector<double>& inArray)
+void ProcessVector(vector<double>& inArray)
 {
 	double arithmeticMean = FindArithmeticMeanPositiveElements(inArray);
 	SumNumberToArrayElements(inArray, arithmeticMean);
