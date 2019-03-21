@@ -6,11 +6,11 @@ using namespace std;
 int main()
 {
 
-	SetConsoleCP(866);
+	SetConsoleCP(866); // дл€ корректного ввода и вывода кирилицы
 	SetConsoleOutputCP(866);
 
 	string word;
-	map<string, size_t> statisctic;
+	map<string, size_t> statisctic; // отсортированный ассоциативный контейнер, который содержит пары ключ-значение с неповтор€ющимис€ ключами.
 
 	while (cin >> word)
 	{
