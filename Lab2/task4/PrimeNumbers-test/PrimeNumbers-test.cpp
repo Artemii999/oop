@@ -22,7 +22,4 @@ TEST_CASE("test GeneratePrimeNumbersSet - function return set of prime numbers b
 	CHECK(IsEqually(GeneratePrimeNumbersSet(10), { 2, 3, 5, 7 }));
 	CHECK(IsEqually(GeneratePrimeNumbersSet(2), { 2 }));
 	CHECK(IsEqually(GeneratePrimeNumbersSet(1), {}));
-#ifndef _DEBUG
-	CHECK(GeneratePrimeNumbersSet(100000000).size() == 5761455);
-#endif
 }
