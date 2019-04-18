@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{437A7700-D912-4FB0-89D1-CFDC9739E342}</ProjectGuid>
+    <ProjectGuid>{08F4294A-7B16-42AD-970C-267B4270F781}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>task1</RootNamespace>
+    <RootNamespace>shape</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>task1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -152,34 +151,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CCircle.h" />
-    <ClInclude Include="CLineSegment.h" />
-    <ClInclude Include="CRectangle.h" />
-    <ClInclude Include="CShapeMaker.h" />
-    <ClInclude Include="CTriangle.h" />
-    <ClInclude Include="IShape.h" />
-    <ClInclude Include="ISolidShape.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="CreateShape.h" />
+    <ClInclude Include="LineSegment.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Point.h" />
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="SolidShape.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CCircle.cpp" />
-    <ClCompile Include="CLineSegment.cpp" />
-    <ClCompile Include="CRectangle.cpp" />
-    <ClCompile Include="CShapeMaker.cpp" />
-    <ClCompile Include="CTriangle.cpp" />
-    <ClCompile Include="IShape.cpp" />
-    <ClCompile Include="ISolidShape.cpp" />
+    <ClCompile Include="Cicle.cpp" />
+    <ClCompile Include="CreateShape.cpp" />
+    <ClCompile Include="LineSegment.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="SolidShape.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

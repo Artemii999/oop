@@ -9,7 +9,10 @@
 #ifndef PCH_H
 #define PCH_H
 
+#pragma once
+
 #include "targetver.h"
+
 
 #include <algorithm>
 #include <functional>
@@ -19,10 +22,10 @@
 #include <memory>
 #include <sstream>
 #include <stdio.h>
-#include <string>
 #include <tchar.h>
-#include <utility>
 #include <vector>
+
+// TODO: Установите здесь ссылки на дополнительные заголовки, требующиеся для программы
 
 #include "../../Catch2/catch.hpp"
 
