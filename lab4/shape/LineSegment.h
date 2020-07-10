@@ -1,7 +1,7 @@
 #pragma once
 #include "Shape.h"
 
-class CLineSegment final : public CShape
+class CLineSegment final : public CShape // создаём виртуальный класс для отрезок
 {
 public:
 	CLineSegment(CPoint const& startPoint, CPoint const& endPoint, std::string const& outlineColor);

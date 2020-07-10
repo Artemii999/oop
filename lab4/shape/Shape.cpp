@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "Shape.h"
-
-std::string CShape::GetOutlineColor() const
+// фигура
+std::string CShape::GetOutlineColor() const // взять цвет обводки
 {
 	return m_outlineColor;
 }
 
-void CShape::SetOutlineColor(const std::string& color)
+void CShape::SetOutlineColor(const std::string& color) // отдать цвет обводки
 {
 	m_outlineColor = color;
 }

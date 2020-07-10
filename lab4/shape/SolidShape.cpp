@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "SolidShape.h"
-
+// заполненная фигура
 std::string CSolidShape::GetFillColor() const
 {
 	return m_fillColor;

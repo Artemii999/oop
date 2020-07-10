@@ -2,7 +2,7 @@
 #include "Triangle.h"
 #include <iomanip>
 #include <sstream>
-
+// треугольникы
 CTriangle::CTriangle(CPoint const& vertex1, CPoint const& vertex2, CPoint const& vertex3, std::string const& outlineColor, std::string const& fillColor)
 	: m_vertex1(vertex1)
 	, m_vertex2(vertex2)

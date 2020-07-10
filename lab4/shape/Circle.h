@@ -1,7 +1,7 @@
 #pragma once
 #include "SolidShape.h"
 
-class CCircle final
+class CCircle final // создаём виртуальный класс для круга
 	: public CSolidShape
 {
 public:

@@ -1,7 +1,7 @@
 #pragma once
 #include "SolidShape.h"
 
-class CTriangle final : public CSolidShape
+class CTriangle final : public CSolidShape // создаём наследуемый класс треугольник от твёрдой фигуры
 {
 public:
 	CTriangle(CPoint const& vertex1, CPoint const& vertex2, CPoint const& vertex3, std::string const& outlineColor, std::string const& fillColor);

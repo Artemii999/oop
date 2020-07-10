@@ -5,7 +5,7 @@
 #include "Rectangle.h"
 #include "Shape.h"
 #include "Triangle.h"
-
+// создание фигуры
 CCreateShape::CCreateShape(std::istream& input)
 	: m_actionMap({ { "line", std::bind(&CCreateShape::CreateLine, this, std::placeholders::_1) },
 		  { "triangle", std::bind(&CCreateShape::CreateTriangle, this, std::placeholders::_1) },

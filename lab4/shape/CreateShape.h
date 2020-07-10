@@ -2,9 +2,9 @@
 #include "pch.h"
 #include "Shape.h"
 
-class CCreateShape
+class CCreateShape // класс создания фигуры
 {
-public:
+public: // std::shared_ptr это интеллектуальный указатель, который сохраняет общее владение объектом 
 	CCreateShape(std::istream& input);
 	std::shared_ptr<CShape> ExecuteCommand() const;
 

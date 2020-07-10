@@ -1,7 +1,7 @@
 #pragma once
 #include "Shape.h"
 
-class CSolidShape : public CShape
+class CSolidShape : public CShape // класс залитой фигуры наследуется от класса фигуры
 {
 public:
 	std::string GetFillColor() const;

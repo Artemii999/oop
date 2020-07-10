@@ -2,7 +2,7 @@
 #include "Rectangle.h"
 #include <iomanip>
 #include <sstream>
-
+// прямоугольник
 CRectangle::CRectangle(CPoint const& leftTop, CPoint const& rightBottom, std::string const& outlineColor, std::string const& fillColor)
 	: m_leftTop(leftTop)
 	, m_rightBottom(rightBottom)

@@ -2,7 +2,7 @@
 #include "LineSegment.h"
 #include <iomanip>
 #include <sstream>
-
+// отрезок
 CLineSegment::CLineSegment(CPoint const& startPoint, CPoint const& endPoint, std::string const& outlineColor)
 	: m_startPoint(startPoint)
 	, m_endPoint(endPoint)

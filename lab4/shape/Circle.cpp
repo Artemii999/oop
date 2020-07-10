@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <math.h>
 #include <sstream>
-
+// круг
 CCircle::CCircle(CPoint const& center, double const& radius, std::string const& outlineColor, std::string const& fillColor)
 	: m_center(center)
 	, m_radius(radius)

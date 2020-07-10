@@ -1,14 +1,14 @@
 #pragma once
 #include <string>
 
-class CPoint
+class CPoint // // создаём класс для точки
 {
 public:
 	double x;
 	double y;
 };
 
-class CShape
+class CShape // создаём класс для обведённой фигуры
 {
 public:
 	virtual double GetArea() const = 0;

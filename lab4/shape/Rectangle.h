@@ -1,10 +1,10 @@
 #pragma once
 #include "SolidShape.h"
 
-class CRectangle final
+class CRectangle final // виртуальный класс прямоугольника
 	: public CSolidShape
 {
-public:
+public: //override используется в классе-потомке, чтобы указать что функция должна переопределять виртуальную функцию
 	CRectangle(CPoint const& leftTop, CPoint const& rightBottom, std::string const& outlineColor, std::string const& fillColor);
 	double GetArea() const override;
 	double GetPerimeter() const override;
